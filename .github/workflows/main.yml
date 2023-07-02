@@ -43,6 +43,6 @@ jobs:
       - name: Build and publish
         run: |
           poetry config pypi-token.pypi ${{ secrets.PYPI_API_TOKEN }}
-          poetry version $(git describe --tags --abbrev=0 | grep -Eoe '[0-9]+.[0-9]+\.[0-9]+')
+          poetry version minor
           poetry build
           poetry publish
