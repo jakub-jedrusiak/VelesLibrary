@@ -33,7 +33,8 @@ def aut(
     return_type: str = "page",
     instruction: str | None = None,
 ) -> list[Page] | list[Question]:
-    """Alternative Uses Task. The task measures creativity. The participant is given
+    """Alternative Uses Task (AUT)
+    The task measures creativity. The participant is given
     an item (e.g. a brick) and asked to list as many uses of it as possible. This
     function returns a a list of pages or list of questions. The first page contains
     an instruction. The second page contains the item and the task itself.

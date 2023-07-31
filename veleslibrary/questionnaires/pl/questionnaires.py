@@ -27,12 +27,22 @@ def tipi(
     Ten item adaptation of Big Five. Measures five personality traits: Extraversion, Agreeableness, Conscientiousness, Emotional Stability and Openness to Experience.
 
     Original:
-    Gosling, S. D., Rentfrow, P. J., Swann, W. B. Jr. (2003). A very brief measure of the Big-Five personality domains. Journal of Research in Personality, 37, 504–528.
+        Gosling, S. D., Rentfrow, P. J., Swann, W. B. Jr. (2003). A very brief measure of the Big-Five personality domains. Journal of Research in Personality, 37, 504–528.
 
     Adaptation:
-    Sorokowska, A., Słowińska A., Zbieg A., Sorokowski, P. (2014). Polska adaptacja testu Ten Item Personality Inventory (TIPI) – TIPI-PL – wersja standardowa i internetowa. Wrocław: WrocLab.
+        Sorokowska, A., Słowińska A., Zbieg A., Sorokowski, P. (2014). Polska adaptacja testu Ten Item Personality Inventory (TIPI) – TIPI-PL – wersja standardowa i internetowa. Wrocław: WrocLab.
 
-    Reverse items: 2, 4, 6, 8, 10
+    Reverse items:
+        2, 4, 6, 8, 10
+    
+    Args:
+        label (str, optional): Items base label. Defaults to "TIPI".
+        question_type (str, optional): Question type for the item. Defaults to "radio".
+        description (str | None, optional): Question description. Looks like a subtitle. Defaults to None.
+        options (QuestionOptions | None, optional): Options that will be applied to each item. Defaults to None.
+
+    Returns:
+        list[Question]: A list of Question objects.
     """
 
     items = """Lubiącą towarzystwo innych, aktywną i optymistyczną.

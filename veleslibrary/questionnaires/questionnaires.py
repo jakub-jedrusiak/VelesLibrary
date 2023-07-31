@@ -23,9 +23,21 @@ def rse(
     """
     Rosenberg Self-Esteem Scale (RSE)
     One of the most popular self-esteem scales. Measures global self-esteem.
-    Rosenberg, M. (1965). Society and the adolescent self-image. Princeton, NJ: Princeton University Press.
+    
+    Original:
+        Rosenberg, M. (1965). Society and the adolescent self-image. Princeton, NJ: Princeton University Press.
 
-    Reverse items: 3, 5, 8, 10
+    Reverse items:
+        3, 5, 8, 10
+    
+    Args:
+        label (str, optional): Items base label. Defaults to "RSE".
+        question_type (str, optional): Question type for the item. Defaults to "radio".
+        description (str | None, optional): Question description. Looks like a subtitle. Defaults to None.
+        options (QuestionOptions | None, optional): Options that will be applied to each item. Defaults to None.
+
+    Returns:
+        list[Question]: A list of Question objects.
     """
     RSE_items = """I feel that I am a person of worth, at least on an equal plane with others.
 I feel that I have a number of good qualities.
