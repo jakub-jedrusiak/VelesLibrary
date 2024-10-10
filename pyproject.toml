@@ -2,12 +2,12 @@
 name = "veleslibrary"
 version = "0.0.0"
 description = "Questionnaires and other tests for Veles surveys."
-authors = ["Jakub Jędrusiak <kuba23031999@gmail.com>"]
+authors = ["Jakub Jędrusiak <jakub.jedrusiak2@uwr.edu.pl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-velesresearch = ">= 0.0.16"
+velesresearch = ">= 0.1.0"
 anyascii = "^0.3.2"
 
 
