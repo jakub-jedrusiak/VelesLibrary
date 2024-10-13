@@ -6,7 +6,7 @@ from velesresearch.models import PageModel
 
 def rses(
     name: str = "RSES",
-    instruction: str = "Below is a list of statements dealing with your general feelings about yourself. Please indicate how strongly you agree or disagree with each statement.",
+    instruction: str | None = None,
     questionOptions: dict | None = None,
     pageOptions: dict | None = None,
 ) -> PageModel:
@@ -15,20 +15,26 @@ def rses(
         One of the most popular self-esteem scales. Measures global self-esteem.
 
     ## Original
-        Rosenberg, M. (1965). _Rosenberg Self-Esteem Scale (RSES)_ [Database record]. APA PsycTests. <https://doi.org/10.1037/t01038-000>
+        Rosenberg, M. (1965). *Rosenberg Self-Esteem Scale (RSES)* [Database record]. APA PsycTests. <https://doi.org/10.1037/t01038-000>
+
+    ## Score calculation
+        A simple sum.
 
     ## Reverse items
         3, 5, 8, 10
 
     Args:
         name (str): Base name for pages and questions. Defaults to "RSES".
-        instruction (str): Instruction for the questionnaire. Defaults to "Below is a list of statements dealing with your general feelings about yourself. Please indicate how strongly you agree or disagree with each statement.".
+        instruction (str): Instruction for the questionnaire. `None` means that the default instruction will be used.
         questionOptions (dict | None): Additional options for questions as a dictionary. Defaults to None.
         pageOptions (dict | None): Additional options for pages as a dictionary. Defaults to None.
 
     Returns:
-        PageModel: PageModel with the RSES questionnaire.
+        PageModel: PageModel with the RSES questionnaire. Use the `*` operator to unpack it to questions.
     """
+
+    if instruction is None:
+        instruction = "Below is a list of statements dealing with your general feelings about yourself. Please indicate how strongly you agree or disagree with each statement."
 
     return vls.page(
         name + "_page",
