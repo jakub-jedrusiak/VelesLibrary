@@ -1067,22 +1067,6 @@ files = [
 typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 
 [[package]]
-name = "pynpm"
-version = "0.1.2"
-description = "Python interface to your NPM and package.json."
-optional = false
-python-versions = "*"
-files = [
-    {file = "pynpm-0.1.2-py2.py3-none-any.whl", hash = "sha256:3f03fbf667549f8b8b7e0419eef88d1b21833ce288f96de66fbb761b9f4c4061"},
-    {file = "pynpm-0.1.2.tar.gz", hash = "sha256:8a6d3f9423760cf3c142db3bf9bda5a075e8a91837e7d2e2b0a3de5be5e26da2"},
-]
-
-[package.extras]
-all = ["Sphinx (>=1.5.1)", "check-manifest (>=0.25)", "coverage (>=4.0)", "isort (>=4.2.2)", "pydocstyle (>=1.0.0)", "pytest (>=2.8.0)", "pytest-cache (>=1.0)", "pytest-cov (>=1.8.0)", "pytest-pep8 (>=1.0.6)"]
-docs = ["Sphinx (>=1.5.1)"]
-tests = ["check-manifest (>=0.25)", "coverage (>=4.0)", "isort (>=4.2.2)", "pydocstyle (>=1.0.0)", "pytest (>=2.8.0)", "pytest-cache (>=1.0)", "pytest-cov (>=1.8.0)", "pytest-pep8 (>=1.0.6)"]
-
-[[package]]
 name = "pyproject-api"
 version = "1.8.0"
 description = "API to interact with the python pyproject.toml based projects"
@@ -1322,13 +1306,13 @@ testing = ["build[virtualenv] (>=1.2.2)", "covdefaults (>=2.3)", "detect-test-po
 
 [[package]]
 name = "trove-classifiers"
-version = "2024.9.12"
+version = "2024.10.13"
 description = "Canonical source for classifiers on PyPI (pypi.org)."
 optional = false
 python-versions = "*"
 files = [
-    {file = "trove_classifiers-2024.9.12-py3-none-any.whl", hash = "sha256:f88a27a892891c87c5f8bbdf110710ae9e0a4725ea8e0fb45f1bcadf088a491f"},
-    {file = "trove_classifiers-2024.9.12.tar.gz", hash = "sha256:4b46b3e134a4d01999ac5bc6e528afcc10cc48f0f724f185f267e276005768f4"},
+    {file = "trove_classifiers-2024.10.13-py3-none-any.whl", hash = "sha256:4154432be880041d8cb1e01f7e0d9989a4ca24a71355bc036777919ec0a633f2"},
+    {file = "trove_classifiers-2024.10.13.tar.gz", hash = "sha256:b820fc6f9544543afa15e5d9cfc426cde3b20fc2246dff6f019b835731508cef"},
 ]
 
 [[package]]
@@ -1361,19 +1345,18 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
 name = "velesresearch"
-version = "0.1.0"
+version = "0.2.0"
 description = "Veles is a free and open source python survey tool for researchers."
 optional = false
 python-versions = "<4.0,>=3.11"
 files = [
-    {file = "velesresearch-0.1.0-py3-none-any.whl", hash = "sha256:6c42c30fec3f25315b13d3e78ac36e3c967c3e3eed25609e5f719e6c04465194"},
-    {file = "velesresearch-0.1.0.tar.gz", hash = "sha256:0dc805dc3c4e7282c95af14dba8f932eaf0115f766d09eff1e7c68bbb38aaf47"},
+    {file = "velesresearch-0.2.0-py3-none-any.whl", hash = "sha256:10565d1a849d5072d6de264df099bcae3250bd14d302a799dff7f7b69ff14c46"},
+    {file = "velesresearch-0.2.0.tar.gz", hash = "sha256:c62d05dc38a5bea1518efd83495fbbf0d711f530b5f81b9e20427be06c601b7c"},
 ]
 
 [package.dependencies]
 markdown = ">=3.4.3,<4.0.0"
 pydantic = ">=2.0.0,<3.0.0"
-pynpm = ">=0.1.2,<0.2.0"
 
 [[package]]
 name = "virtualenv"
@@ -1490,4 +1473,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "b0c6dbe887a900b599512c838e6e9ec3a4c1f31324887321761c55450d0bfeff"
+content-hash = "ff8f11cf95f544a4f50293346f1f019fbc01d6b72870c464b06ffa413f60d9f5"
