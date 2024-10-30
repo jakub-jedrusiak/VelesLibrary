@@ -45,6 +45,9 @@ def nfcs(
             4. Avoidance of ambiguity: α = .67
             5. Closed mindedness: α = .62
 
+    ## Implemented by
+        Jędrusiak, Jakub
+
     Args:
         name (str): Base name for pages and questions. Defaults to "NFCS".
         instruction (str): Instruction for the questionnaire. `None` means that the default instruction will be used.
@@ -215,6 +218,9 @@ def nfcsShort(
 
     ## Reliability
         α = .87
+
+    ## Implemented by
+        Jędrusiak, Jakub
 
     Args:
         name (str): Base name for pages and questions. Defaults to "NFCS".

@@ -53,6 +53,9 @@ def tipi(
             4. Emotional Stability: α = .65
             5. Openness to Experience: α = .47
 
+    ## Implemented by
+        Jędrusiak, Jakub
+
     Args:
         name (str): Base name for pages and questions. Defaults to "TIPI".
         instruction (str): Instruction for the questionnaire. Defaults to "Poniżej przedstawiona jest lista cech, które <u>są lub nie są</u> Twoimi charakterystykami. Zaznacz przy poszczególnych stwierdzeniach, do jakiego stopnia <u>zgadzasz się lub nie zgadzasz</u> z każdym z nich. Oceń stopień, w jakim każde z pytań odnosi się do Ciebie.".

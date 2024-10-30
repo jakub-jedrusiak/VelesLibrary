@@ -29,6 +29,9 @@ def rses(
     ## Reliability
         α = .88
 
+    ## Implemented by
+        Jędrusiak, Jakub
+
     Args:
         name (str): Base name for pages and questions. Defaults to "RSES".
         instruction (str): Instruction for the questionnaire. `None` means that the default instruction will be used.
