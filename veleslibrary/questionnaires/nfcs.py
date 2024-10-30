@@ -231,7 +231,7 @@ def nfcsShort(
         pageOptions (dict | None): Additional options for pages as a dictionary. Defaults to None.
 
     Returns:
-        PageModel: PageModel with the NFCS long questionnaire. Use the `*` operator to unpack it to questions.
+        PageModel: PageModel with the NFCS short questionnaire. Use the `*` operator to unpack it to questions.
     """
 
     if matrixOptions is None:
