@@ -23,6 +23,36 @@ def tipi(
     ## Reverse items
         2, 4, 6, 8, 10
 
+    ## Subscales
+        1. Extraversion (1, 6)
+        2. Agreeableness (2, 7)
+        3. Conscientiousness (3, 8)
+        4. Emotional Stability (4, 9)
+        5. Openness to Experience (5, 10)
+
+    ## Reliability
+
+        ### Paper and pencil
+            1. Extraversion: α = .68
+            2. Agreeableness: α = .58
+            3. Conscientiousness: α = .75
+            4. Emotional Stability: α = .72
+            5. Openness to Experience: α = .44
+
+        ### Google Forms
+            1. Extraversion: α = .74
+            2. Agreeableness: α = .54
+            3. Conscientiousness: α = .80
+            4. Emotional Stability: α = .83
+            5. Openness to Experience: α = .45
+
+        ### Online application
+            1. Extraversion: α = .70
+            2. Agreeableness: α = .50
+            3. Conscientiousness: α = .76
+            4. Emotional Stability: α = .65
+            5. Openness to Experience: α = .47
+
     Args:
         name (str): Base name for pages and questions. Defaults to "TIPI".
         instruction (str): Instruction for the questionnaire. Defaults to "Poniżej przedstawiona jest lista cech, które <u>są lub nie są</u> Twoimi charakterystykami. Zaznacz przy poszczególnych stwierdzeniach, do jakiego stopnia <u>zgadzasz się lub nie zgadzasz</u> z każdym z nich. Oceń stopień, w jakim każde z pytań odnosi się do Ciebie.".

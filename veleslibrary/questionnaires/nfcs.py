@@ -16,9 +16,9 @@ def nfcs(
         Measures the need for cognitive closure. There are two versions – long (41 items) and short (15 items). This function returns **the long version**. NFCS can be divided into five subscales: the need for order, the need for predictability, decisiveness, avoidance of ambiguity, closed mindedness.
 
     ## Original
-        Webster, D. M., & Kruglanski, A. W. (1994). Individual differences in need for cognitive closure. *Journal of Personality and Social Psychology*, *67*(6), 1049–1062.
+        Webster, D. M., & Kruglanski, A. W. (1994). Individual differences in need for cognitive closure. *Journal of Personality and Social Psychology*, *67*(6), 1049–1062. <https://doi.org/10.1037/0022-3514.67.6.1049>
 
-        Roets, A., & Van Hiel, A. (2007). Separating ability from need: Clarifying the dimensional structure of the need for closure scale. *Personality and Social Psychology Bulletin*, *33*(2), 266-280.
+        Roets, A., & Van Hiel, A. (2007). Separating ability from need: Clarifying the dimensional structure of the need for closure scale. *Personality and Social Psychology Bulletin*, *33*(2), 266-280. <https://doi.org/10.1177/0146167206294744>
 
         You need to **cite both papers** if you use the NFCS in your research.
 
@@ -34,6 +34,16 @@ def nfcs(
         3. Decisiveness: 12, 13, 15, 16, 17, 22
         4. Avoidance of ambiguity: 3, 8, 14, 21, 29, 30, 31, 36, 38
         5. Closed mindedness: 2, 4, 9, 24, 28, 34, 37, 39
+
+    ## Reliability
+        α = .84
+
+        ### Subscales
+            1. Need for order: α = .82
+            2. Need for predictability: α = .79
+            3. Decisiveness: α = .70
+            4. Avoidance of ambiguity: α = .67
+            5. Closed mindedness: α = .62
 
     Args:
         name (str): Base name for pages and questions. Defaults to "NFCS".
@@ -186,11 +196,11 @@ def nfcsShort(
         Measures the need for cognitive closure. There are two versions – long (41 items) and short (15 items). This function returns **the short version**. NFCS can be divided into five subscales: the need for order, the need for predictability, decisiveness, avoidance of ambiguity, closed mindedness.
 
     ## Original
-        Webster, D. M., & Kruglanski, A. W. (1994). Individual differences in need for cognitive closure. *Journal of Personality and Social Psychology*, *67*(6), 1049–1062.
+        Webster, D. M., & Kruglanski, A. W. (1994). Individual differences in need for cognitive closure. *Journal of Personality and Social Psychology*, *67*(6), 1049–1062. <https://doi.org/10.1037/0022-3514.67.6.1049>
 
         Pierro, A., & Kruglanski, A.W. (2005). *Revised need for cognitive closure scale.* (Unpublished manuscript). Università di Roma, "La Sapienza", Rome.
 
-        Roets, A., & Van Hiel, A. (2011). Item selection and validation of a brief, 15-item version of the Need for Closure Scale. *Personality and Individual Differences*, *50*(1), 90-94.
+        Roets, A., & Van Hiel, A. (2011). Item selection and validation of a brief, 15-item version of the Need for Closure Scale. *Personality and Individual Differences*, *50*(1), 90-94. <https://doi.org/10.1016/j.paid.2010.09.004>
 
         You need to **cite all published papers** if you use the NFCS in your research.
 
@@ -199,6 +209,9 @@ def nfcsShort(
 
     ## Reverse items
         None.
+
+    ## Reliability
+        α = .87
 
     Args:
         name (str): Base name for pages and questions. Defaults to "NFCS".

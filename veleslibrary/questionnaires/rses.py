@@ -23,6 +23,9 @@ def rses(
     ## Reverse items
         3, 5, 8, 10
 
+    ## Reliability
+        α = .88
+
     Args:
         name (str): Base name for pages and questions. Defaults to "RSES".
         instruction (str): Instruction for the questionnaire. `None` means that the default instruction will be used.
