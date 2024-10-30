@@ -30,7 +30,7 @@ def rses(
         α = .88
 
     ## Implemented by
-        Jędrusiak, Jakub
+        Jędrusiak, Jakub (University of Wrocław)
 
     Args:
         name (str): Base name for pages and questions. Defaults to "RSES".

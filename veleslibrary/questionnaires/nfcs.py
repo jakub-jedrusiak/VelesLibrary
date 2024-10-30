@@ -46,7 +46,7 @@ def nfcs(
             5. Closed mindedness: α = .62
 
     ## Implemented by
-        Jędrusiak, Jakub
+        Jędrusiak, Jakub (University of Wrocław)
 
     Args:
         name (str): Base name for pages and questions. Defaults to "NFCS".
@@ -220,7 +220,7 @@ def nfcsShort(
         α = .87
 
     ## Implemented by
-        Jędrusiak, Jakub
+        Jędrusiak, Jakub (University of Wrocław)
 
     Args:
         name (str): Base name for pages and questions. Defaults to "NFCS".

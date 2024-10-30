@@ -54,7 +54,7 @@ def tipi(
             5. Openness to Experience: α = .47
 
     ## Implemented by
-        Jędrusiak, Jakub
+        Jędrusiak, Jakub (University of Wrocław)
 
     Args:
         name (str): Base name for pages and questions. Defaults to "TIPI".
