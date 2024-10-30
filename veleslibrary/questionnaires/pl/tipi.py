@@ -24,11 +24,11 @@ def tipi(
         2, 4, 6, 8, 10
 
     ## Subscales
-        1. Extraversion (1, 6)
-        2. Agreeableness (2, 7)
-        3. Conscientiousness (3, 8)
-        4. Emotional Stability (4, 9)
-        5. Openness to Experience (5, 10)
+        1. Extraversion: 1, 6
+        2. Agreeableness: 2, 7
+        3. Conscientiousness: 3, 8
+        4. Emotional Stability: 4, 9
+        5. Openness to Experience: 5, 10
 
     ## Reliability
 
