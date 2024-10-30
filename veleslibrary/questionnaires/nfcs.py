@@ -210,6 +210,9 @@ def nfcsShort(
     ## Reverse items
         None.
 
+    ## Subscales
+        None.
+
     ## Reliability
         α = .87
 

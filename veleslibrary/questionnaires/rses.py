@@ -23,6 +23,9 @@ def rses(
     ## Reverse items
         3, 5, 8, 10
 
+    ## Subscales
+        None.
+
     ## Reliability
         α = .88
 
