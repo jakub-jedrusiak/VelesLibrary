@@ -6,7 +6,7 @@ from velesresearch.models import PageModel
 
 def tipi(
     name: str = "TIPI",
-    instruction: str = "Poniżej przedstawiona jest lista cech, które <u>są lub nie są</u> Twoimi charakterystykami. Zaznacz przy poszczególnych stwierdzeniach, do jakiego stopnia <u>zgadzasz się lub nie zgadzasz</u> z każdym z nich. Oceń stopień, w jakim każde z pytań odnosi się do Ciebie.",
+    instruction: str | None = None,
     questionOptions: dict | None = None,
     pageOptions: dict | None = None,
 ) -> PageModel:
@@ -65,6 +65,14 @@ def tipi(
     Returns:
         PageModel: PageModel with the TIPI questionnaire.
     """
+    if instruction is None:
+        instruction = "Poniżej przedstawiona jest lista cech, które <u>są lub nie są</u> Twoimi charakterystykami. Zaznacz przy poszczególnych stwierdzeniach, do jakiego stopnia <u>zgadzasz się lub nie zgadzasz</u> z każdym z nich. Oceń stopień, w jakim każde z pytań odnosi się do Ciebie."
+
+    if questionOptions is None:
+        questionOptions = {}
+
+    if pageOptions is None:
+        pageOptions = {}
 
     items = """Lubiącą towarzystwo innych, aktywną i optymistyczną.
 Krytyczną względem innych, konfliktową.

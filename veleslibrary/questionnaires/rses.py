@@ -45,6 +45,12 @@ def rses(
     if instruction is None:
         instruction = "Below is a list of statements dealing with your general feelings about yourself. Please indicate how strongly you agree or disagree with each statement."
 
+    if questionOptions is None:
+        questionOptions = {}
+
+    if pageOptions is None:
+        pageOptions = {}
+
     return vls.page(
         name + "_page",
         vls.info(
