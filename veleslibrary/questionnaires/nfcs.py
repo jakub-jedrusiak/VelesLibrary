@@ -1,6 +1,7 @@
 """The Need for Closure Scale (NFCS)"""
 
 import velesresearch as vls
+from velesresearch.models import PageModel
 
 
 def nfcs(
@@ -10,7 +11,7 @@ def nfcs(
     matrixOptions: dict | None = None,
     ratingOptions: dict | None = None,
     pageOptions: dict | None = None,
-) -> vls.PageModel:
+) -> PageModel:
     """
     ## The Need for Closure Scale (NFCS)
         Measures the need for cognitive closure. There are two versions – long (41 items) and short (15 items). This function returns **the long version**. NFCS can be divided into five subscales: the need for order, the need for predictability, decisiveness, avoidance of ambiguity, closed mindedness.
@@ -193,7 +194,7 @@ def nfcsShort(
     matrixOptions: dict | None = None,
     ratingOptions: dict | None = None,
     pageOptions: dict | None = None,
-) -> vls.PageModel:
+) -> PageModel:
     """
     ## The Need for Closure Scale (NFCS)
         Measures the need for cognitive closure. There are two versions – long (41 items) and short (15 items). This function returns **the short version**. NFCS can be divided into five subscales: the need for order, the need for predictability, decisiveness, avoidance of ambiguity, closed mindedness.
