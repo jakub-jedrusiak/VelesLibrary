@@ -12,19 +12,21 @@ def tls15(
 ) -> PageModel:
     """
     ## Triangular Love Scale (TLS-15)
-       Shorter version of TLS-45, that measures three compotents of love: intimacy, passion, and commitment.
+       Sternberg's triangular love theory questionnaire. A shorter version of TLS-45, that measures three components of love: intimacy, passion, and commitment.
 
     ## Original
         Kowal, M., et al., (2024). Validation of the Short Version (TLS-15) of the Triangular Love Scale (TLS-45) across 37 Languages. _Archives of Sexual Behavior_, _53_, 839-857. <https://doi.org/10.1007/s10508-023-02702-7>
+
         Sternberg, R. J. (1997). Construct validation of a triangular love scale. _European Journal of Social Psychology_, _27_(3), 313-335. <https://doi.org/10.1002/(SICI)1099-0992(199705)27:3%3C313::AID-EJSP824%3E3.0.CO;2-4>
+
         Sternberg, R. J. (1988). _The triangle of love: Intimacy, passion, commitment._ Basic Books.
 
     ## Score calculation
-        An average.
+        An average. Can be calculated separately for the subscales or for the whole questionnaire.
 
     ## Reverse items
         None.
-        
+
     ## Subscales
         1. Intimacy: 1, 2, 3, 4, 5
         2. Passion: 6, 7, 8, 9, 10
@@ -33,10 +35,10 @@ def tls15(
     ## Reliability
         α = .95
 
-            ### Subscales
-                1. Intimacy: α = .89
-                2. Passion: α =.89
-                3. Commitment: α = 0.92
+        ### Subscales
+            1. Intimacy: α = .89
+            2. Passion: α =.89
+            3. Commitment: α = 0.92
 
     ## Implemented by
         Ksawery Łakomy (University of Wrocław)
@@ -85,7 +87,7 @@ I view my relationship with my partner as permanent.
 I feel a sense of responsibility toward my partner.""".split(
                 "\n"
             ),
-            "1 - not at all; 2; 3; 4; 5 - extremely".split("; "),
+            "1 – Not at all; 2; 3; 4; 5 – Extremely".split("; "),
             **questionOptions,
         ),
         **pageOptions,
