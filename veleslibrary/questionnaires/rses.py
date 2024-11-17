@@ -15,7 +15,9 @@ def rses(
         One of the most popular self-esteem scales. Measures global self-esteem.
 
     ## Original
-        Rosenberg, M. (1965). *Rosenberg Self-Esteem Scale (RSES)* [Database record]. APA PsycTests. <https://doi.org/10.1037/t01038-000>
+        <div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
+        <div class="csl-entry">Rosenberg, M. (2011). <i>Rosenberg self-esteem scale</i> [Database record]. APA PsycTests. <https://doi.org/10.1037/t01038-000></div>
+        </div>
 
     ## Score calculation
         A simple sum.
