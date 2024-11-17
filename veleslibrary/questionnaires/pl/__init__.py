@@ -14,3 +14,4 @@ See the repo: https://github.com/jakub-jedrusiak/VelesDocs
 """
 
 from .tipi import tipi
+from .rses import rses
