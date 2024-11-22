@@ -15,5 +15,5 @@ See the repo: https://github.com/jakub-jedrusiak/VelesDocs
 
 from .rses import rses
 from .nfcs import nfcs, nfcsShort
-from .tls15 import tls15
+from .tls_15 import tls_15
 from .sd3 import sd3

@@ -4,8 +4,8 @@ import velesresearch as vls
 from velesresearch.models import PageModel
 
 
-def tls15(
-    name: str = "TLS15",
+def tls_15(
+    name: str = "TLS_15",
     instruction: str | None = None,
     questionOptions: dict | None = None,
     pageOptions: dict | None = None,
@@ -44,7 +44,7 @@ def tls15(
         Ksawery Łakomy (University of Wrocław)
 
     Args:
-        name (str): Base name for pages and questions. Defaults to "TLS15".
+        name (str): Base name for pages and questions. Defaults to "TLS_15".
         instruction (str): Instruction for the questionnaire. `None` means that the default instruction will be used.
         questionOptions (dict | None): Additional options for questions as a dictionary. Defaults to None.
         pageOptions (dict | None): Additional options for pages as a dictionary. Defaults to None.
