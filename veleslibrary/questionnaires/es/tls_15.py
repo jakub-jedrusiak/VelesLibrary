@@ -1,4 +1,5 @@
 """Triangular Love Scale (TLS-15)"""
+
 import velesresearch as vls
 from velesresearch.models import PageModel
 
