@@ -1,8 +1,10 @@
+"""Test all functions in the veleslibrary package."""
+
 import importlib.util
 import inspect
 import os
-from ast import literal_eval
 import pytest
+import veleslibrary
 
 
 def get_package_path(package_name):
@@ -45,13 +47,13 @@ def collect_function_paths_from_package(package_name):
                     )
                     module = importlib.util.module_from_spec(spec)
                     spec.loader.exec_module(module)
-                except Exception as e:
+                except Exception as e:  # pylint: disable=broad-except
                     print(f"Failed to load module {full_module_name}: {e}")
                     continue
 
                 # Collect functions defined in the module
-                for name, func in inspect.getmembers(module, inspect.isfunction):
-                    function_paths.append(f"{full_module_name}.{name}")
+                for name in inspect.getmembers(module, inspect.isfunction):
+                    function_paths.append(f"{full_module_name}.{name[0]}")
     function_paths = [
         ".".join(path.split(".")[:-2] + path.split(".")[-1:]) for path in function_paths
     ]
@@ -59,13 +61,14 @@ def collect_function_paths_from_package(package_name):
 
 
 def test_all():
-    import veleslibrary
-
+    """
+    Dynamically import all functions in the veleslibrary package and run them.
+    """
     veleslibrary_functions = [
         f"{func}()" for func in collect_function_paths_from_package("veleslibrary")
     ]
     for func in veleslibrary_functions:
         try:
-            eval(func)
-        except Exception as e:
+            eval(func, {"veleslibrary": veleslibrary})  # pylint: disable=eval-used
+        except Exception as e:  # pylint: disable=broad-except
             pytest.fail(f"Function {func} raised an exception: {e}")
