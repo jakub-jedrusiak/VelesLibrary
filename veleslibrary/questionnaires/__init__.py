@@ -13,6 +13,7 @@ I'd be greatful if you could also write a documentation for the questionnaire.
 See the repo: https://github.com/jakub-jedrusiak/VelesDocs
 """
 
+from . import es, hu, pl, sv
 from .rses import rses
 from .nfcs import nfcs, nfcsShort
 from .tls_15 import tls_15
