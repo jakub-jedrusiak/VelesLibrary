@@ -1,6 +1,8 @@
 """Triangular Love Scale (TLS-15)"""
+
 import velesresearch as vls
 from velesresearch.models import PageModel
+
 
 def tls_15(
     name: str = "TLS_15",
@@ -11,30 +13,30 @@ def tls_15(
     """
     ## Triangular Love Scale (TLS-15)
         Sternberg’s triangular love theory questionnaire. A shorter version of TLS-45, that measures three components of love: intimacy, passion, and commitment.
-    
+
     ## Original
         <div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
         <div class="csl-entry">Kowal, M., Sorokowski, P., Dinić, B. M., Pisanski, K., Gjoneska, B., Frederick, D. A., Pfuhl, G., Milfont, T. L., Bode, A., Aguilar, L., García, F. E., Roberts, S. C., Abad-Villaverde, B., Kavčič, T., Miroshnik, K. G., Ndukaihe, I. L. G., Šafárová, K., Valentova, J. V., Aavik, T., … Sternberg, R. J. (2024). Validation of the short version (TLS-15) of the triangular love scale (TLS-45) across 37 languages. <i>Archives of Sexual Behavior</i>, <i>53</i>(2), 839–857. <https://doi.org/10.1007/s10508-023-02702-7></div>
         <div class="csl-entry">Sternberg, R. J. (1988). <i>The triangle of love: Intimacy, passion, commitment.</i> Basic Books.</div>
         <div class="csl-entry">Sternberg, R. J. (1997). Construct validation of a triangular love scale. <i>European Journal of Social Psychology</i>, <i>27</i>(3), 313–335. <https://doi.org/10.1002/(SICI)1099-0992(199705)27:3&lt;313::AID-EJSP824&gt;3.0.CO;2-4></div>
         </div>
-    
+
     ## Score calculation
         An average.
 
     ## Reverse items
         None.
-    
+
     ## Subscales
-        1.  Intimacy: 5
-        2. Passion: 5
-        3. Commitment: 5
+        1. Intimacy: 1, 2, 3, 4, 5
+        2. Passion: 6, 7, 8, 9, 10
+        3. Commitment: 11, 12, 13, 14, 15
 
     ## Reliability
         α = .95
 
         ### Subscales
-            1.  Intimacy: α = .89
+            1. Intimacy: α = .89
             2. Passion: α = .89
             3. Commitment: α = .92
 
@@ -83,7 +85,7 @@ Mam poczucie odpowiedzialności wobec mojego partnera/mojej partnerki.""".split(
 3
 4
 5 – Zdecydowanie tak""".split(
-  "\n"
+        "\n"
     )
 
     return vls.page(
