@@ -33,9 +33,9 @@ def tls_15(
         None.
 
     ## Subscales
-        1. Intimacy: 5
-        2. Commitment: 5
-        3. Passion: 5
+        1. Intimacy: 1, 2, 3, 4, 5
+        2. Passion: 6, 7, 8, 9, 10
+        3. Commitment: 11, 12, 13, 14, 15
 
     ## Reliability
         α = .95
