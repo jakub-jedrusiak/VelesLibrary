@@ -15,3 +15,4 @@ See the repo: https://github.com/jakub-jedrusiak/VelesDocs
 
 from .tipi import tipi
 from .rses import rses
+from .tls_15 import tls_15
