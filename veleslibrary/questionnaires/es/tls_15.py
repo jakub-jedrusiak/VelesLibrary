@@ -3,6 +3,7 @@
 import velesresearch as vls
 from velesresearch.models import PageModel
 
+
 def tls_15(
     name: str = "TLS_15",
     instruction: str | None = None,
@@ -16,9 +17,8 @@ def tls_15(
     ## Original
         <div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
         <div class="csl-entry">Kowal, M., Sorokowski, P., Dinić, B. M., Pisanski, K., Gjoneska, B., Frederick, D. A., Pfuhl, G., Milfont, T. L., Bode, A., Aguilar, L., García, F. E., Roberts, S. C., Abad-Villaverde, B., Kavčič, T., Miroshnik, K. G., Ndukaihe, I. L. G., Šafárová, K., Valentova, J. V., Aavik, T., … Sternberg, R. J. (2024). Validation of the short version (TLS-15) of the triangular love scale (TLS-45) across 37 languages. <i>Archives of Sexual Behavior</i>, <i>53</i>(2), 839–857. <https://doi.org/10.1007/s10508-023-02702-7></div>
-        <div class="csl-entry">Sternberg , R. J. (1988). <i>The triangle of love: Intimacy, passion, commitment.</i> Basic Books.</div>
-        <div class="csl-entry">Sternberg, R. J. (1997a). Construct validation of a triangular love scale. <i>European Journal of Social Psychology</i>, <i>27</i>(3), 313–335. <https://doi.org/10.1002/(SICI)1099-0992(199705)27:3&lt;313::AID-EJSP824&gt;3.0.CO;2-4></div>
-        <div class="csl-entry">Sternberg, R. J. (1997b). Construct validation of a triangular love scale. <i>European Journal of Social Psychology</i>, <i>27</i>(3), 313–335. <https://doi.org/10.1002/(SICI)1099-0992(199705)27:3&lt;313::AID-EJSP824&gt;3.0.CO;2-4></div>
+        <div class="csl-entry">Sternberg, R. (1988). <i>The triangle of love: Intimacy, passion, commitment.</i> Basic Books.</div>
+        <div class="csl-entry">Sternberg, R. J. (1997). Construct validation of a triangular love scale. <i>European Journal of Social Psychology</i>, <i>27</i>(3), 313–335. <https://doi.org/10.1002/(SICI)1099-0992(199705)27:3&lt;313::AID-EJSP824&gt;3.0.CO;2-4></div>
         </div>
 
     ## Score calculation
@@ -37,11 +37,11 @@ def tls_15(
 
         ### Subscales
             1. Intimacy: α = .89
-            2. Commitment: α = .92
-            3. Passion: α = .89
+            2. Passion: α = .89
+            3. Commitment: α = .92
 
     ## Implemented by
-        Julia Jankowska (University of Wrocław)
+        Piotr  Jędrusik (University of Wrocław)
 
     Args:
         name (str): Base name for pages and questions. Defaults to "TLS_15".
@@ -53,8 +53,8 @@ def tls_15(
         PageModel: PageModel with the TLS-15 questionnaire. Use the `*` operator to unpack it to questions.
     """
     if instruction is None:
-        instruction = """I den här delen av enkäten är vi intresserade av processer som sker inom förhållanden. Läs vart och ett av följande påståenden, och fyll i blankstegen med namnet på en person som du älskar eller bryr dig mycket om (din pojkvän/flickvän/make/maka). Ange i vilken utsträckning du håller med om varje påstående enligt följande skala och välj ett nummer från 1 (inte alls) till 5 (extremt mycket).
-1 - Inte alls, 5 - Extremt mycket"""
+        instruction = """En esta parte del cuestionario, nos interesamos por lo que pasa dentro de lasrelaciones. Lea cada una de las siguientes frases, rellenando los espacios blancos y conteste pensandoen la persona que ama o a la que le tiene mucho cariño (su pareja, su enamorado(a) o compañera(o) de vida).Evalúe cada una de las frases con la siguiente escala, marcando el número que corresponda entre 1 (para nada) y 5 (extremamente).
+1 - Para nada, 5 - Extremadamente"""
 
     if questionOptions is None:
         questionOptions = {}
@@ -62,28 +62,29 @@ def tls_15(
     if pageOptions is None:
         pageOptions = {}
 
-    items = """Jag har ett varmt förhållande med min partner.
-Jag får mycket känslomässigt stöd från min partner.
-Jag värdesätter min partner mycket i mitt liv.
-Jag har ett bekvämt förhållande med min partner.
-Jag känner att min partner verkligen förstår mig.
-Mitt förhållande med min partner är väldigt romantiskt. Jag tycker att min partner är mycket attraktiv personligen.
-Jag kan inte föreställa mig en annan person som skulle göra mig lika lycklig som min partner gör.
-Det finns något nästan "magiskt" med mitt förhållande med min partner.
-Mitt förhållande med min partner är passionerat.
-Jag har förtroende för att mitt förhållande med min partner är stabilt.
-Jag ser mitt engagemang för min partner som stabilt.
-Jag är säker på min kärlek till min partner.
-Jag ser mitt förhållande med min partner som permanent.
-Jag har en känsla av ansvar gentemot min partner.""".split(
+    items = """Tengo una relación afectuosa con mi pareja.
+Mi pareja me da un apoyo emocional considerable.
+Valoro mucho a mi pareja dentro de mi vida.
+Tengo una relación agradable con mi pareja.
+Creo que mi pareja realmente me entiende,
+Mi relación con mi pareja es muy romántica.
+Encuentro a mi pareja muy atractiva.
+No puedo imaginar a otra persona que me haga tan feliz como mi pareja.
+Hay algo casi “mágico” en mi relación con mi pareja.
+Mi relación con mi pareja es apasionada.
+Tengo confianza que la relación con mi pareja es estable.
+Considero que mi compromiso con mi pareja es sólido.
+Estoy seguro(a) de mi amor hacia mi pareja.
+Considero que mi relación con mi pareja es permanente.
+Tengo un sentimiento de responsabilidad hacia mi pareja.""".split(
         "\n"
     )
 
-    scale = """1 – Inte alls
+    scale = """1 – Para nada
 2
 3
 4
-5 – Extremt mycket""".split(
+5 – Extremadamente""".split(
         "\n"
     )
 

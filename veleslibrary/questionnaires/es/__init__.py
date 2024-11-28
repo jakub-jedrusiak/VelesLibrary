@@ -1,5 +1,5 @@
 """
-This module contains some open, free-to-use questionnaires in English.
+This module contains some open, free-to-use questionnaires in Spanish.
 If you want to add your own questionnaire, go ahead and add it to a new file.
 For other languages, use appropriate folders.
 
@@ -13,8 +13,4 @@ I'd be greatful if you could also write a documentation for the questionnaire.
 See the repo: https://github.com/jakub-jedrusiak/VelesDocs
 """
 
-from . import es, hu, pl, sv
-from .rses import rses
-from .nfcs import nfcs, nfcsShort
 from .tls_15 import tls_15
-from .sd3 import sd3
