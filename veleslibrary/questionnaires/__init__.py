@@ -18,3 +18,4 @@ from .rses import rses
 from .nfcs import nfcs, nfcsShort
 from .tls_15 import tls_15
 from .sd3 import sd3
+from .mini_cope import mini_cope
